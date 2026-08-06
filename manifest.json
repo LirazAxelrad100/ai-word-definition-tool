@@ -3,17 +3,11 @@
   "name": "AI Word Definition Tool",
   "version": "0.1.0",
   "description": "Highlight a word or phrase on any page to get an AI-powered definition, usage examples across fields, and a Wikipedia link in the side panel.",
-  "permissions": ["sidePanel", "storage"],
+  "permissions": ["sidePanel", "storage", "contextMenus"],
   "host_permissions": ["https://api.anthropic.com/*"],
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
   "side_panel": {
     "default_path": "sidepanel.html"
   },
