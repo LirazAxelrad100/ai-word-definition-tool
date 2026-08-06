@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Word Definition Tool",
+  "version": "0.1.0",
+  "description": "Highlight a word or phrase on any page to get an AI-powered definition, usage examples across fields, and a Wikipedia link in the side panel.",
+  "permissions": ["sidePanel", "storage"],
+  "host_permissions": ["https://api.anthropic.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "AI Word Definition Tool"
+  },
+  "options_page": "options.html"
+}

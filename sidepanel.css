@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+#openOptions {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+#manualForm {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+#manualInput {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+#manualForm button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#manualForm button:hover {
+  background: #f0f0f0;
+}
+
+.empty, .error {
+  color: #777;
+}
+
+.error {
+  color: #b3261e;
+}
+
+.error a {
+  color: #b3261e;
+}
+
+.term {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.part-of-speech {
+  font-style: italic;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+.definition {
+  margin: 0 0 16px;
+  line-height: 1.4;
+}
+
+.usages h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #666;
+  margin: 0 0 8px;
+}
+
+.usage {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+}
+
+.usage .field {
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.usage .example {
+  margin: 0;
+  color: #333;
+  line-height: 1.4;
+}
+
+.wiki-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #1a56db;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.wiki-link:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  color: #777;
+}
