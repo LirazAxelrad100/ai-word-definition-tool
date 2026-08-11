@@ -15,9 +15,12 @@ used across different fields (with examples), and a link to look it up on Wikipe
 
 ## Use
 
-Select any word or short phrase on a webpage, right-click, and choose **Define "…" with
-AI** from the context menu — the side panel opens with the definition. You can also type
-a word directly into the side panel's search box.
+Select any word or short phrase on a webpage, then either:
+- Right-click and choose **Define "…" with AI** from the context menu, or
+- Click the extension's toolbar icon
+
+Either way, the side panel opens with the definition. You can also type a word directly
+into the side panel's search box.
 
 ## Notes
 
